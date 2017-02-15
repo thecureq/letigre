@@ -1,15 +1,15 @@
-.overlay{
-  position:fixed;
-   background:url(../img/loader.png);
-  -webkit-animation:25s scroll infinite linear;
-  -moz-animation:25s scroll infinite linear;
-  -o-animation:25s scroll infinite linear;
-  -ms-animation:25s scroll infinite linear;
-  animation:25s scroll infinite linear;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+.bg {
+  position: fixed;
+   background: url(../img/loader.png);
+  -webkit-animation: 25s scroll infinite linear;
+  -moz-animation: 25s scroll infinite linear;
+  -o-animation: 25s scroll infinite linear;
+  -ms-animation: 25s scroll infinite linear;
+  animation: 25s scroll infinite linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes scroll{
