@@ -1,0 +1,27 @@
+.head {
+
+}
+
+.girl {
+}
+
+.girl_1 {
+  display: block;
+  float: left;
+  width: 308px;
+  height: 518px;
+}
+.girl_1:hover {
+  background-image: url("../img/head/head_a_girl_2.png");
+}
+
+.girl_2 {
+  float: right;
+  width: 375px;
+  height: 523px;
+}
+
+.boy {
+  width: 362px;
+  height: 430px;
+}

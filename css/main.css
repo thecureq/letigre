@@ -1,14 +1,28 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .main {
   width: 100%;
   height: 100%;
 }
 
-.section-one {
+/*.section-one {
   width: 100%;
   height: 100%;
-}
+}*/
 
-.section-one .logo {
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url(../img/logo.png);
   background-repeat: no-repeat;
+  position: absolute;
+  width: 754px;
+  height: 159px;
 }

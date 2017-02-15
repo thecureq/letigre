@@ -17,19 +17,59 @@
   });
 </script>
 
+<script>
+$(document).ready(function(){
+
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+    $('.fullscreen-nav').toggleClass('open');
+	});
+});
+</script>
+
   <title>LE TIGRE</title>
 
   </head>
 
   <body>
+    <div id="wrapper">
+      <nav class="fullscreen-nav">
+        <ul class="menu">
+          <li>work</li>
+          <li>about</li>
+          <li>art</li>
+        </ul>
+      </nav>
+
+      <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <div class="main">
       <section class="section-one">
+        <div class="flash"></div>
         <div class="bg">
           <div class="logo"><img src="img/logo.png" alt="LE TIGRE"></div>
         </div>
       </section>
-      <section></section>
-      <section></section>
-    </div>
+
+      <section class="section-two">
+        <p>
+          fjgifjgij
+        </p>
+      </section>
+      <section class="section-three">
+        <div class="head">
+          <div class="girl">
+            <div class="girl_1"><img src="img/head/head_a_girl.png" class="floating"></div>
+            <div class="girl_2"><img src="img/head/head_b_girl.png" class="floating"></div>
+          </div>
+          <div class="boy"><img src="img/head/head_boy.png" class="floating"></div>
+        </div>
+      </section>
+      </div>
   </body>
 </html>
