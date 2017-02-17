@@ -1,8 +1,13 @@
 #nav-icon {
-  /*z-index: 2;*/
+  z-index: 2;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
   width: 26px;
   height: 19px;
-  position: absolute;
+
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -17,9 +22,9 @@
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 4px;
   width: 100%;
-  background: black;
+  background: #9eff46;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -80,11 +85,11 @@
 }
 
 .fullscreen-nav {
-  /*z-index: 1;*/
+  z-index: 1;
   padding-top: 40px;
   height: 100%;
   width: 100%;
-  background: white;
+  background: #ff42cb;
   position: fixed;
   left: 0;
   top: 0;
@@ -95,17 +100,6 @@
 
 .fullscreen-nav.open {
   opacity: 1;
-}
-
-.menu {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 300px;
-  list-style: none;
-  left: 0;
-  right: 0;
-  top: 20%;
 }
 
 .nav-link {
