@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascripts/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="javascripts/typed.js"></script>
+    <script>
+  $(document).ready(function(){
+      $(".element").typed({
+        strings: ["RIOT GRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\nRRRRRL"],
+        typeSpeed: 50
+      });
+  });
+</script>
     <title>page 1</title>
   </head>
   <body>
-    <img src="img/head.png" class="floating" />
+    <span class="element" style="white-space:pre"></span>
   </body>
 </html>

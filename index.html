@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="javascripts/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="javascripts/typed.js"></script>
+
     <script>
   $(document).ready(function(){
     $(".main").onepage_scroll({
@@ -26,6 +28,16 @@ $(document).ready(function(){
 	});
 });
 </script>
+
+<script>
+$(document).ready(function(){
+  $(".element").typed({
+    strings: ["RIOT GRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\nRRRRRL"],
+    typeSpeed: 50
+  });
+});
+</script>
+
 
   <title>LE TIGRE</title>
 
@@ -57,9 +69,8 @@ $(document).ready(function(){
       </section>
 
       <section class="section-two">
-        <p>
-          fjgifjgij
-        </p>
+        <span class="element" style="white-space:pre"></span>
+        <div class="square"></div>
       </section>
       <section class="section-three">
         <div class="head">

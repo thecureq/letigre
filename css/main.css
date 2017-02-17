@@ -23,6 +23,7 @@ html, body {
   background: url(../img/logo.png);
   background-repeat: no-repeat;
   position: absolute;
-  width: 754px;
-  height: 159px;
+  /*width: 1386px;
+  height: 290px;*/
+  margin: 250px 0 0 250px;
 }
