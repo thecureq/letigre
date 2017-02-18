@@ -1,16 +1,21 @@
+.text {
+  z-index: 1;
+  position: absolute;
+  margin: 170px 0 0 145px;
+}
+
 .element {
   font-family: FuckingAWF;
-  font-size: 50px;
-  width: 100%;
+  font-size: 85px;
   color: #ff42cb;
 }
 
 
 .square {
   position: absolute;
-  margin: 200px 0px 0px 200px;
-  width: 500px;
-  height: 500px;
+  margin: 45px 0px 0px 100px;
+  width: 630px;
+  height: 630px;
   background: white;
-  border: 20px solid #9eff46;
+  border: 15px solid #9eff46;
 }

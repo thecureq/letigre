@@ -17,11 +17,14 @@ html, body {
 }*/
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: url(../img/logo.png);
   background-repeat: no-repeat;
+  width: 1079px;
+  height: 189px;
   position: absolute;
-  margin: 250px 0 0 250px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }

@@ -10,37 +10,34 @@
     <script type="text/javascript" src="javascripts/typed.js"></script>
 
     <script>
-  $(document).ready(function(){
-    $(".main").onepage_scroll({
-      sectionContainer: "section",
-      responsiveFallback: 600,
-      loop: true
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
     });
-  });
-</script>
+    </script>
 
-<script>
-$(document).ready(function(){
+    <script>
+    $(document).ready(function(){
+      $('#nav-icon').click(function(){
+        $(this).toggleClass('open');
+        $('.fullscreen-nav').toggleClass('open');
+      });
+    });
+    </script>
 
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-    $('.fullscreen-nav').toggleClass('open');
-	});
-});
-</script>
+    <script>
+    $(document).ready(function(){
+      $(".element").typed({
+        strings: ["FEMINISM\nAND RIOT GRRRRRRRRRRRRRRR\nRRRRRL"],
+        typeSpeed: 50
+      });
+    });
+    </script>
 
-<script>
-$(document).ready(function(){
-  $(".element").typed({
-    strings: ["RIOT GRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\nRRRRRL"],
-    typeSpeed: 50
-  });
-});
-</script>
-
-
-  <title>LE TIGRE</title>
-
+    <title>LE TIGRE</title>
   </head>
 
   <body>
@@ -51,6 +48,7 @@ $(document).ready(function(){
           <div><a href="#" data-href="about">ABOUT</a></div>
           <div><a href="#" data-href="band">BAND</a></div>
         </div>
+
         <div class="footer">
           <div class="share">
             <a class="#"></a>
@@ -76,18 +74,31 @@ $(document).ready(function(){
       </section>
 
       <section class="section-two">
-        <span class="element" style="white-space:pre"></span>
+        <div class="text">
+          <span class="element" style="white-space:pre"></span>
+        </div>
         <div class="square"></div>
       </section>
+
       <section class="section-three">
         <div class="head">
-          <div class="girl">
-            <div class="girl_1"><img src="img/head/head_a_girl.png" class="floating"></div>
-            <div class="girl_2"><img src="img/head/head_b_girl.png" class="floating"></div>
+          <div id="girl_1" class="floating">
+            <div class="name_1">
+              <span class="name">KATHLEEN</span>
           </div>
-          <div class="boy"><img src="img/head/head_boy.png" class="floating"></div>
         </div>
-      </section>
+        <div id="girl_2" class="floating">
+          <div class="name_2">
+            <span class="name">JOHANNA</span>
+          </div>
+        </div>
+        <div id="boy" class="floating">
+          <div class="name_3">
+            <span class="name">JOCELYN</span>
+          </div>
+        </div>
       </div>
-  </body>
+    </section>
+  </div>
+</body>
 </html>
