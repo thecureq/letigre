@@ -3,11 +3,12 @@
   font-size: 40px;
   color: #ff42cb;
 }
+
 #girl_1 {
   background-image: url("../img/head/head_a_girl.png");
   display: block;
   position: absolute;
-  margin: 10px 0 0 20px;
+  margin: 20px 0 0 35px;
   width: 308px;
   height: 518px;
 }
@@ -18,19 +19,15 @@
 
 #girl_1 .name_1 {
   position: absolute;
-  margin: 540px 0 0 75px;
+  margin: 540px 0 0 60px;
   width: 205px;
   height: 35px;
-}
-
-#girl_1 .name_1:hover {
-  display: block;
 }
 
 #girl_2 {
   background-image: url("../img/head/head_b_girl.png");
   display: block;
-  margin: 10px 0 0 1050px;
+  margin: 20px 0 0 1080px;
   position: absolute;
   width: 375px;
   height: 523px;
@@ -43,18 +40,15 @@
 
 #girl_2 .name_2 {
   position: absolute;
-  margin: 540px 0 0 1050px;
+  margin: 523px 0 0 100px;
+  width: 195px;
+  height: 35px;
 }
-
-#girl_2 .name_2:hover {
-  display: block;
-}
-
 
 #boy {
   background-image: url(../img/head/head_boy.png);
   display: block;
-  margin: 255px 0 0 500px;
+  margin: 255px 0 0 550px;
   position: absolute;
   width: 362px;
   height: 430px;
@@ -62,4 +56,11 @@
 
 #boy:hover {
   background-image: url(../img/head/head_boy_2.png);
+}
+
+#boy .name_3 {
+  position: absolute;
+  margin: -51px 0 0 85px;
+  width: 180px;
+  height: 35px;
 }

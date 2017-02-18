@@ -4,18 +4,29 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="javascripts/typed.js"></script>
-    <script>
-  $(document).ready(function(){
-      $(".element").typed({
-        strings: ["RIOT GRRRRRRRRRRRRRRRRRRRRRRRRRRRRR\nRRRRRL"],
-        typeSpeed: 50
-      });
-  });
-</script>
+    <script type="text/javascript">
+    $(function() {
+      $('#btn').click(function() {
+        $('#full_menu').show()
+        $('#btn').hide()
+      })
+    })
+    </script>
+
+    <script type="text/javascript">
+    (function () {
+      $('#btn').on('click', function() {
+        $('.bar').toggleClass('animate');
+      })
+    })
+    </script>
+
     <title>page 1</title>
   </head>
   <body>
-    <span class="element" style="white-space:pre"></span>
+    <div id='btn'>
+      <div class='bar'></div>
+    </div>
+    <div id='full_menu'></div>
   </body>
 </html>

@@ -101,15 +101,3 @@
 .fullscreen-nav.open {
   opacity: 1;
 }
-
-.nav-link {
-  padding: 20px 0px;
-  font-size: 48px;
-  border-bottom: 1px solid #95a5a6;
-  font-weight: 700;
-  -o-transition:.5s;
-   -ms-transition:.5s;
-   -moz-transition:.5s;
-   -webkit-transition:.5s;
-   transition:.5s;
-}
