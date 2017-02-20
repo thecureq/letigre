@@ -8,7 +8,11 @@
   background-image: url("../img/head/head_a_girl.png");
   display: block;
   position: absolute;
-  margin: 20px 0 0 35px;
+  top: 0;
+  bottom: 300px;
+  left: 0;
+  right: 1500px;
+  margin: auto;
   width: 308px;
   height: 518px;
 }
@@ -27,8 +31,12 @@
 #girl_2 {
   background-image: url("../img/head/head_b_girl.png");
   display: block;
-  margin: 20px 0 0 1080px;
   position: absolute;
+  top: 0;
+  bottom: 300px;
+  left: 1000px;
+  right: 0;
+  margin: auto;
   width: 375px;
   height: 523px;
 }
@@ -48,10 +56,15 @@
 #boy {
   background-image: url(../img/head/head_boy.png);
   display: block;
-  margin: 255px 0 0 550px;
+  /*margin: 255px 0 0 550px;*/
   position: absolute;
   width: 362px;
   height: 430px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 #boy:hover {
