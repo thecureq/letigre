@@ -13,9 +13,18 @@
 
 .square {
   position: absolute;
-  margin: 45px 0px 0px 100px;
-  width: 630px;
-  height: 630px;
+  margin: 70px 0px 0px 100px;
+  width: 700px;
+  height: 700px;
   background: white;
   border: 15px solid #9eff46;
+}
+
+#music {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background-image: url(../img/music.png);
+  width: 398px;
+  height: 314px;
 }

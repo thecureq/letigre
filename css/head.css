@@ -1,79 +1,87 @@
+.head {
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+}
+
 .name {
   font-family: FuckingAWF;
   font-size: 40px;
   color: #ff42cb;
 }
 
-#girl_1 {
-  background-image: url("../img/head/head_a_girl.png");
-  display: block;
+.kathleen {
+  float: left;
   position: absolute;
-  top: 0;
-  bottom: 300px;
-  left: 0;
-  right: 1500px;
-  margin: auto;
+  top: 50px;
+  left: 100px;
+  /*width: 339px;
+  height: 578px;*/
+}
+
+#girl_1 {
+  display: flex;
+  background-image: url("../img/head/kathleen.png");
   width: 308px;
   height: 518px;
 }
 
 #girl_1:hover {
-  background-image: url("../img/head/head_a_girl_2.png");
+  background-image: url("../img/head/kathleen_2.png");
 }
 
-#girl_1 .name_1 {
+#name_1 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 550px;
+}
+
+.jocelyn {
   position: absolute;
-  margin: 540px 0 0 60px;
-  width: 205px;
-  height: 35px;
+  margin: 0 auto;
+  top: 500px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 341px;
+  height: 447px;
+}
+
+#boy {
+  background-image: url(../img/head/jocelyn.png);
+  width: 362px;
+  height: 430px;
+}
+
+#boy:hover {
+  background-image: url(../img/head/jocelyn_2.png);
+}
+
+#name_2 {
+  position: absolute;
+  bottom: 450px;
+  margin: 0 auto;
+}
+
+.johanna {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  float: right;
+  /*width: 339px;
+  height: 600px;*/
 }
 
 #girl_2 {
-  background-image: url("../img/head/head_b_girl.png");
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 300px;
-  left: 1000px;
-  right: 0;
-  margin: auto;
+  background-image: url("../img/head/johanna.png");
   width: 375px;
   height: 523px;
 }
 
 #girl_2:hover {
-  background-image: url("../img/head/head_b_girl_2.png");
+  background-image: url("../img/head/johanna_2.png");
 }
 
-
-#girl_2 .name_2 {
-  position: absolute;
-  margin: 523px 0 0 100px;
-  width: 195px;
-  height: 35px;
-}
-
-#boy {
-  background-image: url(../img/head/head_boy.png);
-  display: block;
-  /*margin: 255px 0 0 550px;*/
-  position: absolute;
-  width: 362px;
-  height: 430px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#boy:hover {
-  background-image: url(../img/head/head_boy_2.png);
-}
-
-#boy .name_3 {
-  position: absolute;
-  margin: -51px 0 0 85px;
-  width: 180px;
-  height: 35px;
+#name_3 {
+  margin: 0 auto;
 }
