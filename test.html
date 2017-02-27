@@ -4,29 +4,17 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      $('#btn').click(function() {
-        $('#full_menu').show()
-        $('#btn').hide()
-      })
-    })
-    </script>
-
-    <script type="text/javascript">
-    (function () {
-      $('#btn').on('click', function() {
-        $('.bar').toggleClass('animate');
-      })
-    })
-    </script>
 
     <title>page 1</title>
   </head>
   <body>
-    <div id='btn'>
-      <div class='bar'></div>
-    </div>
-    <div id='full_menu'></div>
+    <svg width="100%" height="100%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <path id="path">
+		<animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
+	</path>
+	<text id="song" fill='hsla(36, 95%, 85%, 1)'>
+		<textPath xlink:href="#path">RIOT GRRRRRRRL</textPath>
+	</text>
+</svg>
   </body>
 </html>

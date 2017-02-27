@@ -13,17 +13,17 @@
 .kathleen {
   float: left;
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 100px;
-  /*width: 339px;
-  height: 578px;*/
 }
 
 #girl_1 {
+  float: left;
   display: flex;
   background-image: url("../img/head/kathleen.png");
-  width: 308px;
-  height: 518px;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 580px;
 }
 
 #girl_1:hover {
@@ -43,14 +43,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 341px;
-  height: 447px;
+  width: 350px;
+  height: 580px;
 }
 
 #boy {
+  display: flex;
   background-image: url(../img/head/jocelyn.png);
-  width: 362px;
-  height: 430px;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 580px;
 }
 
 #boy:hover {
@@ -58,24 +60,25 @@
 }
 
 #name_2 {
-  position: absolute;
-  bottom: 450px;
+  display: flex;
   margin: 0 auto;
+  margin-top: 480px;
 }
 
 .johanna {
+  z-index: 999;
   position: absolute;
-  top: 50px;
-  right: 100px;
+  top: 80px;
+  right: 130px;
   float: right;
-  /*width: 339px;
-  height: 600px;*/
 }
 
 #girl_2 {
+  display: flex;
   background-image: url("../img/head/johanna.png");
   width: 375px;
-  height: 523px;
+  height: 580px;
+  background-repeat: no-repeat;
 }
 
 #girl_2:hover {
@@ -83,5 +86,7 @@
 }
 
 #name_3 {
+  display: flex;
   margin: 0 auto;
+  margin-top: 550px;
 }
