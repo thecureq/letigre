@@ -46,10 +46,22 @@
     $(document).ready(function(){
       $(".element").typed({
         strings: ["FEMINISM\nAND RIOT GRRRRRRRRRRRRRRR\nRRRRRL"],
-        typeSpeed: 50
+        typeSpeed: 100,
+        loop: 999
       });
     });
     </script>
+
+    <script>
+    $(document).ready(function(){
+      $(".element_2").typed({
+        strings: ["BUY THE TICKEEEEEEEEEEET"],
+        typeSpeed: 100,
+        loop: 999
+      });
+    });
+    </script>
+
   </head>
 
   <body>
@@ -58,14 +70,15 @@
       <div id="wrapper">
         <nav class="fullscreen-nav">
           <div class="menu">
-            <div><a href="#" data-href="about">ABOUT</a></div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/miaulisu" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/thecureq" title="Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.behance.net/soursugar0288c" title="Behance" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+            </div>
           </div>
           <div class="footer">
-            <div class="share">
-              <a href="https://www.facebook.com/" class="icon-facebook"></a><
-              <a href="https://github.com" class="icon-github"></a>
-              <a href="https://instagram.com" class="icon-instagram"></a>
-            </div>
+            <p>Pavla Paveletskaya</p>
+            <p>HSE DC 2020</p>
           </div>
         </nav>
 
@@ -81,7 +94,7 @@
         </div>
       </section>
 
-      <section class="page2">
+      <section id="page2">
         <div class="riot_grrrl">
           <span class="element" style="white-space:pre"></span>
         </div>
@@ -94,7 +107,7 @@
         <div class="gif">
           <img src="img/wow.gif">
         </div>
-        <div class="song_text">
+        <div id="song_text" class="floating">
           <p id="song">EVERY DAY AND NIGHT<br>EVERY DAY AND NIGHT<br>I CAN SEE YOUR DISCO DISCO<br>DICK IS SUCKING MY HEART OUT OF MY MIND<br>I'M OUTTA TIME, I'M OUTTA FUCKIN TIME<br>I'M A GASOLINE GUT WITH A VASELINE MIND BUT<br>WANNA DISCO? WANNA SEE ME DISCO?<br>LET ME HEAR YOU DEPOLITICIZE MY RHYME<br>ONE, TWO, THREE, FOUR<br>YOU GOT WHAT YOU BEEN ASKING FOR<br>YOU'RE SO POLICY FREE AND<br>YOU'RE FANTASY WHEELS AND EVERYTHING YOU THINK<br>AND EVERYTHING YOU FEEL IS ALRIGHT,<br>ALRIGHT, ALRIGHT, ALRIGHT,ALRIGHT<br>I TAKE YOU HOME NOW WATCH ME GET YOU HOT<br>YOU'RE JUST A PARROT WHEN YOU'RE SCREAMING AND YOU'RE SHOUTING<br>"MORE CRACKERS PLEASE, MORE CRACKERS PLEASE"<br>YOU WANT WHAT YOU WANT BUT YOU DON'T WANNA BE ON YOUR KNEES<br>WHO DOES YOUR... WHO DOES YOUR HAIR?<br>WHO TOOK THE BOMP FROM THE BOMPALOMPALOMP?<br>WHO TOOK THE RAM FROM THE RAMALAMADINGDONG?<br>WHO TOOK THE BOMP FROM THE BOMPALOMPALOMP<br>WHO TOOK THE RAM FROM THE RAMALAMADINGDONG?<br>FINE THANK YOU<br>HOW ARE YOU?<br>FINE THANK YOU<br>YOU BOUGHT A NEW VAN THE FIRST YEAR OF YOUR BAND<br>YOU'RE COOL AND I HARDLY WANNA SAY "NOT" BECAUSE I'M SO BORED<br>THAT I'D BE ENTERTAINED EVEN BY A STUPID LINOLEUM FLOOR, LINOLEUM FLOOR<br>YOUR LYRICS ARE DUMB LIKE A LINOLEUM FLOOR<br>I'LL WALK ON IT<br>I'LL WALK ALL OVER YOU<br>WALK ON IT, WALK ON IT, WALKING ONE, TWO<br>I'LL WALK ON IT<br>I'LL WALK ALL OVER YOU</p>
         </div>
       </section>
@@ -122,9 +135,403 @@
       </section>
 
       <section class="page5">
-        <div class="pink"></div>
+        <div id="map"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+        <script type="text/javascript">
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 53.419399, lng: -2.988650},
+            zoom: 9,
+            disableDefaultUI: true,
+            styles: [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#ff42cb"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.neighborhood",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#eeeeee"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#e5e5e5"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#dadada"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#e5e5e5"
+          }
+        ]
+      },
+      {
+        "featureType": "transit.station",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#eeeeee"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#9eff46"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      }
+    ]
+    });
+    var marker_1 = new google.maps.Marker({
+          position: {lat: 53.401500, lng: -2.988800},
+          map: map,
+          title: 'Liverpool',
+          icon: 'marker.png'
+    });
+
+    var contentString_1 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">18 March, 9 p.m.</h1>'+
+              '<div id="bodyContent">'+
+              '<p>HAUS</p>'+
+              '<p>Liverpool, 72-76 Renshaw St'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+        var infowindow_1 = new google.maps.InfoWindow({
+           content: contentString_1,
+           maxWidth: 400
+        });
+
+        marker_1.addListener('click', function() {
+            infowindow_1.open(map, marker_1);
+        });
+
+
+    var marker_2 = new google.maps.Marker({
+      position: {lat: 53.465097, lng: -2.241783},
+      map: map,
+      title: 'Manchester',
+      icon: 'marker.png'
+    });
+
+    var contentString_2 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">21 March, 8 p.m.</h1>'+
+              '<div id="bodyContent">'+
+              '<p>Band on the Wall</p>'+
+              '<p>Manchester, 25 Swan St'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+        var infowindow_2 = new google.maps.InfoWindow({
+           content: contentString_2,
+           maxWidth: 400
+        });
+
+        marker_2.addListener('click', function() {
+            infowindow_2.open(map, marker_2);
+        });
+
+
+    var marker_3 = new google.maps.Marker({
+      position: {lat: 53.753076, lng: -2.700020},
+      map: map,
+      title: 'Preston',
+      icon: 'marker.png'
+    });
+
+    var contentString_3 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">19 March, 8 p.m.</h1>'+
+              '<div id="bodyContent">'+
+              '<p>Black Horse</p>'+
+              '<p>Preston, 166 Friargate'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+        var infowindow_3 = new google.maps.InfoWindow({
+           content: contentString_3,
+           maxWidth: 400
+        });
+
+        marker_3.addListener('click', function() {
+            infowindow_3.open(map, marker_3);
+        });
+
+    var marker_4 = new google.maps.Marker({
+      position: {lat: 52.974471, lng: -2.682641},
+      map: map,
+      title: 'Whitchurch',
+      icon: 'marker.png'
+    });
+
+    var contentString_4 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">27 March, 7 p.m</h1>'+
+              '<div id="bodyContent">'+
+              '<p">The Red Lyon</p>'+
+              '<p">Whitchurch, 46 High St'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+        var infowindow_4 = new google.maps.InfoWindow({
+           content: contentString_4,
+           maxWidth: 400
+        });
+
+        marker_4.addListener('click', function() {
+            infowindow_4.open(map, marker_4);
+        });
+
+        }
+        </script>
+
+        <div class="event">
+          <span class="element_2" style="white-space:pre"></span>
+        </div>
       </section>
-    </div>
   </div>
 </body>
 </html>

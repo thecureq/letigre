@@ -1,6 +1,35 @@
-.pink {
+.page5 {
   background-color: #ff42cb;
-  width: 100%;
-  height: 50%;
-  margin-top: 50vh;
 }
+
+#map {
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  width: 1200px;
+  height: 700px;
+}
+
+#content {
+  font-family: FuturaMD;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+#p {
+  font-size: 15px;
+}
+
+.event {
+  font-family: FuckingAWF;
+  font-size: 85px;
+  color: #9eff46;
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+}
+
+.typed-cursor{
+    opacity: 0;

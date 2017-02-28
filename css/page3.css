@@ -1,11 +1,4 @@
-/*.bg_2 {
-  background-color: #ff42cb;
-  width: 30vw;
-  height: 100%;
-  margin-right: 70vh;
-}*/
-
-.song_text {
+#song_text {
   position: absolute;
   background-size: cover;
   overflow: hidden;
@@ -13,16 +6,32 @@
   max-width: 800px;
   height: 910px;
   left: 32vw;
-  top: 1vh;
+  top: 2vh;
 }
 
 #song {
   font-family: FuckingAWF;
   font-size: 35px;
   color: #ff42cb;
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+  from {
+    color: #ff42cb;
+  }
+  to {
+    color: #9eff46;
+  }
 }
 
 .gif {
+  margin-top: 2vh;
   width: 500px;
   height: 800px;
 }
