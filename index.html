@@ -11,7 +11,7 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="LE TIGRE">
     <meta property="og:description" content="Интерактивный сайт посвященный панк-группе LE TIGRE">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://myidem.moscow/anyatidebil/share.png">
 
     <title>LE TIGRE</title>
 
@@ -22,6 +22,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="javascripts/jquery.onepage-scroll.js"></script>
     <script type="text/javascript" src="javascripts/typed.js"></script>
+
 
     <script>
     $(document).ready(function(){
@@ -46,7 +47,7 @@
     $(document).ready(function(){
       $(".element").typed({
         strings: ["FEMINISM\nAND RIOT GRRRRRRRRRRRRRRR\nRRRRRL"],
-        typeSpeed: 100,
+        typeSpeed: 120,
         loop: 999
       });
     });
@@ -55,9 +56,20 @@
     <script>
     $(document).ready(function(){
       $(".element_2").typed({
-        strings: ["BUY THE TICKEEEEEEEEEEET"],
-        typeSpeed: 100,
+        strings: ["TICKEEEEEEEEEEEEEEEEEEEEEEEEEEEEET"],
+        typeSpeed: 120,
         loop: 999
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#btn").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
       });
     });
     </script>
@@ -88,7 +100,7 @@
           <span></span>
         </div>
 
-      <section class="page1">
+      <section id="page1">
         <div class="bg">
           <div class="logo"><img src="img/logo.png" alt="LE TIGRE"></div>
         </div>
@@ -102,7 +114,7 @@
         <div id="music"></div>
       </section>
 
-      <section class="page3">
+      <section id="page3">
         <div class="bg_2"></div>
         <div class="gif">
           <img src="img/wow.gif">
@@ -112,7 +124,7 @@
         </div>
       </section>
 
-      <section class="page4">
+      <section id="page4">
         <div class="head">
           <div class="kathleen">
             <div id="girl_1" class="floating">
@@ -134,7 +146,7 @@
         </div>
       </section>
 
-      <section class="page5">
+      <section id="page5">
         <div id="map"></div>
         <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
         <script type="text/javascript">
@@ -531,6 +543,48 @@
         <div class="event">
           <span class="element_2" style="white-space:pre"></span>
         </div>
+
+        <div class="button">
+          <a id="btn1" class="btn buy" href="#page6">BUY</a>
+          <a id="btn2" class="btn buy" href="#page6">BUY</a>
+          <a id="btn3" class="btn buy" href="#page6">BUY</a>
+          <a id="btn4" class="btn buy" href="#page6">BUY</a>
+          <a id="btn5" class="btn buy" href="#page6">BUY</a>
+          <a id="btn6" class="btn buy" href="#page6">BUY</a>
+          <a id="btn7" class="btn buy" href="#page6">BUY</a>
+          <a id="btn8" class="btn buy" href="#page6">BUY</a>
+        </div>
+      </section>
+
+
+      <section id="page6">
+        <div id="cagecanvas"></div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+          window.onload = function() {
+            var cagecanvas = document.getElementById("cagecanvas");
+            var cagecount = document.getElementById("count");
+            var counter = 0;
+            setInterval(function() {
+              var top = Math.floor(Math.random() * (110 + 1) - 20);
+              var left = Math.floor(Math.random() * (110 + 1) - 5);
+              var angle = Math.floor(Math.random() * (359 + 1));
+              var cageface = document.createElement("div");
+              cageface.className = "cageface";
+              cageface.style.top = top + "%";
+              cageface.style.left = left + "%";
+              cageface.style.webkitTransform = "rotate(" + angle + "deg)";
+              cagecanvas.appendChild(cageface);
+              counter++;
+              cagecount.innerHTML = "Cage Faces &ndash; " + counter;
+            }, 50);
+          };
+        });
+        </script>
+
+
+
       </section>
   </div>
 </body>

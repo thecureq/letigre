@@ -1,4 +1,4 @@
-.page5 {
+#page5 {
   background-color: #ff42cb;
 }
 
@@ -8,6 +8,9 @@
   left: 5vw;
   width: 1200px;
   height: 700px;
+  background-size: cover;
+  overflow: hidden;
+
 }
 
 #content {
@@ -31,5 +34,78 @@ h1 {
   right: 20px;
 }
 
-.typed-cursor{
+.typed-cursor {
     opacity: 0;
+}
+
+#btn1 {
+  top: 12vh;
+}
+
+#btn2 {
+  top: 21vh;
+}
+
+#btn3 {
+  top: 30vh;
+}
+
+#btn4 {
+  top: 39vh;
+}
+
+#btn5 {
+  top: 48vh;
+}
+
+#btn6 {
+  top: 57vh;
+}
+
+#btn7 {
+  top: 66vh;
+}
+
+#btn8 {
+  top: 75vh;
+}
+
+.btn {
+  overflow: hidden;
+  background-size: cover;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  top: 12vh;
+  left: 85%;
+  margin-top: -25px;
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-user-select: none;
+  cursor: default;
+  margin-bottom: 100px;
+  font-family: FuturaMD;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: #ff42cb;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.buy {
+  padding: 15px;
+  background-color: #9eff46;
+}
+
+.buy:hover {
+    color: #ff42cb;
+    background-color: white;
+}
