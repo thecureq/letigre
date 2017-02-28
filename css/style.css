@@ -1,15 +1,23 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import 'reset.css';
-@import 'main.css';
+@import 'font.css';
+
+/*effects*/
 @import 'onepage-scroll.css';
 @import 'overlay.css';
 @import 'floating.css';
-@import 'button.css';
-@import 'head.css';
+
+/*page*/
+@import 'main.css';
 @import 'page2.css';
-@import 'font.css';
-@import 'menu.css';
-@import 'test.css';
 @import 'page3.css';
+@import 'page4.css';
 @import 'page5.css';
 @import 'page6.css';
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*menu*/
+@import 'button.css';
+@import 'menu.css';
+
+/*test*/
+@import 'test.css';

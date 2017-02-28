@@ -13,8 +13,6 @@
     <meta property="og:description" content="Интерактивный сайт посвященный панк-группе LE TIGRE">
     <meta property="og:image" content="http://myidem.moscow/anyatidebil/share.png">
 
-    <title>LE TIGRE</title>
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -22,57 +20,12 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="javascripts/jquery.onepage-scroll.js"></script>
     <script type="text/javascript" src="javascripts/typed.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.inview.js"></script>
+    <script type="text/javascript" src="javascripts/text.js"></script>
+    <script type="text/javascript" src="javascripts/onepagescroll.js"></script>
+    <script type="text/javascript" src="javascripts/nav_icon.js"></script>
 
-
-    <script>
-    $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-    });
-    </script>
-
-    <script>
-    $(document).ready(function(){
-      $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        $('.fullscreen-nav').toggleClass('open');
-      });
-    });
-    </script>
-
-    <script>
-    $(document).ready(function(){
-      $(".element").typed({
-        strings: ["FEMINISM\nAND RIOT GRRRRRRRRRRRRRRR\nRRRRRL"],
-        typeSpeed: 120,
-        loop: 999
-      });
-    });
-    </script>
-
-    <script>
-    $(document).ready(function(){
-      $(".element_2").typed({
-        strings: ["TICKEEEEEEEEEEEEEEEEEEEEEEEEEEEEET"],
-        typeSpeed: 120,
-        loop: 999
-      });
-    });
-    </script>
-
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $("#btn").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-      });
-    });
-    </script>
+    <title>LE TIGRE</title>
 
   </head>
 
@@ -107,11 +60,13 @@
       </section>
 
       <section id="page2">
-        <div class="riot_grrrl">
-          <span class="element" style="white-space:pre"></span>
+        <div class="open_page">
+          <div class="riot_grrrl">
+            <span class="element" style="white-space:pre"></span>
+          </div>
+          <div class="square"></div>
+          <div id="music"></div>
         </div>
-        <div class="square"></div>
-        <div id="music"></div>
       </section>
 
       <section id="page3">
@@ -558,14 +513,11 @@
 
 
       <section id="page6">
-        <div id="cagecanvas"></div>
-
-        <script type="text/javascript">
+          <div id="cagecanvas"></div>
+          <script type="text/javascript">
         $(document).ready(function(){
-          window.onload = function() {
+          window.onload = function(){
             var cagecanvas = document.getElementById("cagecanvas");
-            var cagecount = document.getElementById("count");
-            var counter = 0;
             setInterval(function() {
               var top = Math.floor(Math.random() * (110 + 1) - 20);
               var left = Math.floor(Math.random() * (110 + 1) - 5);
@@ -576,15 +528,10 @@
               cageface.style.left = left + "%";
               cageface.style.webkitTransform = "rotate(" + angle + "deg)";
               cagecanvas.appendChild(cageface);
-              counter++;
-              cagecount.innerHTML = "Cage Faces &ndash; " + counter;
-            }, 50);
+            }, 500);
           };
         });
         </script>
-
-
-
       </section>
   </div>
 </body>

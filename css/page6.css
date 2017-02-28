@@ -1,6 +1,8 @@
 #page6 {
   overflow: hidden;
   background: white;
+  width: 100%;
+  height: 100%;
 }
 
 .cagecanvas {
@@ -12,6 +14,7 @@
   left: 0;
   right: 0;
 }
+
 .cageface {
   background-image: url(../fuck.png);
   background-repeat: no-repeat;
