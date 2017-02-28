@@ -7,8 +7,13 @@
 
 .song_text {
   position: absolute;
-  top: 5vh;
+  background-size: cover;
+  overflow: hidden;
+  min-width: 800px;
+  max-width: 800px;
+  height: 910px;
   left: 32vw;
+  top: 1vh;
 }
 
 #song {
@@ -18,10 +23,12 @@
 }
 
 .gif {
-  width: 663px;
-  height: 1206px;
-  float: left;
-  top: 80px;
-  margin-left: 80px;
-  position: absolute;
+  width: 500px;
+  height: 800px;
+}
+
+.gif img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }

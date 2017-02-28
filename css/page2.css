@@ -1,7 +1,7 @@
 .riot_grrrl {
   z-index: 1;
-  position: absolute;
-  margin: 250px 0 0 250px;
+  position: fixed;
+  margin: 200px 0 0 280px;
 }
 
 .element {
@@ -10,13 +10,13 @@
   color: #ff42cb;
 }
 
-
 .square {
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  width: 700px;
+  position: fixed;;
+  margin-top: 100px;
+  margin-left: 200px;
   height: 700px;
+  max-width: 700px;
+  min-width: 700px;
   border: 15px solid #9eff46;
 }
 

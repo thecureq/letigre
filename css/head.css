@@ -1,5 +1,5 @@
 .head {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: inline-block;
 }
@@ -8,6 +8,21 @@
   font-family: FuckingAWF;
   font-size: 40px;
   color: #ff42cb;
+  animation-name: flash;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+  from {
+    color: #ff42cb;
+  }
+  to {
+    color: #9eff46;
+  }
 }
 
 .kathleen {
@@ -24,6 +39,7 @@
   background-repeat: no-repeat;
   width: 350px;
   height: 580px;
+  position: fixed;
 }
 
 #girl_1:hover {
@@ -39,7 +55,7 @@
 .jocelyn {
   position: absolute;
   margin: 0 auto;
-  top: 500px;
+  top: 350px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -53,6 +69,7 @@
   background-repeat: no-repeat;
   width: 350px;
   height: 580px;
+  position: fixed;
 }
 
 #boy:hover {
@@ -69,7 +86,7 @@
   z-index: 999;
   position: absolute;
   top: 80px;
-  right: 130px;
+  right: 500px;
   float: right;
 }
 
@@ -79,6 +96,7 @@
   width: 375px;
   height: 580px;
   background-repeat: no-repeat;
+  position: fixed;
 }
 
 #girl_2:hover {
