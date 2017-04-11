@@ -1,111 +1,25 @@
 #page5 {
-  background-color: #ff42cb;
-}
-
-#map {
-  position: absolute;
-  top: 5vh;
-  left: 3vw;
-  width: 1200px;
-  height: 700px;
-  background-size: cover;
   overflow: hidden;
-
+  background: white;
+  width: 100%;
+  height: 100%;
 }
 
-#content {
-  font-family: FuturaMD;
+.cagecanvas {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-h1 {
-  font-size: 25px;
-}
-
-#p {
-  font-size: 15px;
-}
-
-.event {
-  font-family: FuckingAWF;
-  font-size: 85px;
-  color: #9eff46;
+.cageface {
+  background-image: url(../fuck.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 130px;
+  height: 175px;
   position: absolute;
-  bottom: 60px;
-  right: 20px;
-}
-
-.typed-cursor {
-    opacity: 0;
-}
-
-#btn1 {
-  top: 9vh;
-}
-
-#btn2 {
-  top: 20vh;
-}
-
-#btn3 {
-  top: 29vh;
-}
-
-#btn4 {
-  top: 38vh;
-}
-
-#btn5 {
-  top: 47vh;
-}
-
-#btn6 {
-  top: 56vh;
-}
-
-#btn7 {
-  top: 65vh;
-}
-
-#btn8 {
-  top: 74vh;
-}
-
-.btn {
-  overflow: hidden;
-  background-size: cover;
-  margin: 0;
-  border: 0;
-  position: absolute;
-  top: 10vh;
-  left: 85%;
-  margin-top: -25px;
-  margin-left: -100px;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-user-select: none;
-  cursor: default;
-  margin-bottom: 100px;
-  font-family: FuturaMD;
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  color: #ff42cb;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-.buy {
-  padding: 15px;
-  background-color: #9eff46;
-}
-
-.buy:hover {
-    color: #ff42cb;
-    background-color: white;
 }

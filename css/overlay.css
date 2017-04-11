@@ -1,6 +1,7 @@
 .bg {
   position: fixed;
-   background: url(../img/loader.png);
+  background-size: cover;
+  background: url(../img/loader.png);
    /*background-repeat: no-repeat;*/
   -webkit-animation: 25s scroll infinite linear;
   -moz-animation: 25s scroll infinite linear;
