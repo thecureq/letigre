@@ -8,9 +8,9 @@
     <meta name="keywords" content="html, css, hse, design, art, gif, punk, music">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thecureq.github.io/letigre.github.io/">
+    <meta property="og:url" content="https://thecureq.github.io/letigre/">
     <meta property="og:title" content="LE TIGRE">
-    <meta property="og:description" content="Интерактивный сайт посвященный панк-группе LE TIGRE">
+    <meta property="og:description" content="TRUE RIOT GRRRL">
     <meta property="og:image" content="http://myidem.moscow/anyatidebil/share.png">
 
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="javascripts/text.js"></script>
     <script type="text/javascript" src="javascripts/onepagescroll.js"></script>
     <script type="text/javascript" src="javascripts/nav_icon.js"></script>
-    <script type="text/javascript" src="javascripts/likely.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?94" charset="windows-1251"></script>
 
     <title>LE TIGRE</title>
 
@@ -122,11 +122,28 @@
           };
         });
         </script>
-        <div class="likely likely-small">
+        <div class="likely">
           <p>TELL YOUR FRIENDS</p>
-          <div class="facebook">Поделиться</div>
-          <div class="vkontakte">Поделиться</div>
-          <div class="telegram">Отправить</div>
+          <div class="share_button">
+            <div id="vk">
+              <script type="text/javascript">
+                document.write(VK.Share.button(false,{type: "custom", text: "<img src=\"img/vk_social.svg\" width=\"64\" height=\"64\" />"}));
+              </script>
+            </div>
+            <div id="fb">
+              <div id="fb-root"></div>
+              <script>
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+              </script>
+              <div class="fb-share-button" data-href="https://thecureq.github.io/letigre/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecureq.github.io%2Fletigre%2F&amp;src=sdkpreparse"><img src="img/facebook_social.svg" width="58" height="58" alt="share icon"></a></div>
+            </div>
+          </div>
         </div>
       </section>
   </div>
