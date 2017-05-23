@@ -23,3 +23,23 @@
   height: 175px;
   position: absolute;
 }
+
+.likely {
+  position: absolute;
+  /*top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;*/
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  border: 5px solid #9eff46;
+}
+
+.likely p {
+  font-family: FuckingAWF;
+  font-size: 35px;
+  color: #ff42cb;
+  margin: 50px 0 0 120px;
+}
